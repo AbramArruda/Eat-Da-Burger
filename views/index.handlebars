@@ -1,0 +1,40 @@
+<div class="jumbotron">
+  <h1>Eat-Da-Pizza!</h1>
+</div>
+<main>
+  <div class="container" id="nonDevouredPizzas">
+    <div class="row">
+      <div class="col-sm">
+        {{#each pizzas}} {{#unless this.devoured}}
+        <div>
+          <h5>Pizzas waiting to be eaten:</h5>
+          <form action="/pizzas/{{this.id}}?_method=PUT" method="POST">
+            <button type="submit" class='pizzaAvailable'> {{this.pizza_name}}</button>
+          </form>
+        </div>
+        {{/unless}} {{/each}}
+      </div>
+
+      <div class="col-sm" id="devouredPizzas">
+        <h5>Devoured pizzas:</h5>
+        {{#each pizzas}} {{#if this.devoured}}
+        <div class='pizzaEaten'>
+          <div>
+            {{this.pizza_name}}
+          </div>
+        </div>
+        {{/if}} {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="row">
+  <div class="col-sm" id="createPizza">
+    <h2>Add a pizza to devour!</h2>
+    <form action="/pizzas" method="POST" id="makePizza">
+      <input type="text" id="name" name="pizza_name" placeholder="Enter your pizza">
+      <button type="submit" class="addpizzaButton">Add The Pizza</button>
+    </form>
+  </div>
+</div>
