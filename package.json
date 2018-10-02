@@ -1,7 +1,7 @@
 {
   "name": "eat-da-pizza",
   "version": "1.0.0",
-  "description": "Full stack mysql app",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbramArruda/Eat-Da-Burger.git"
+    "url": "git+https://github.com/AbramArruda/Eat-Da-Pizza.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AbramArruda/Eat-Da-Burger/issues"
+    "url": "https://github.com/AbramArruda/Eat-Da-Pizza/issues"
   },
-  "homepage": "https://github.com/AbramArruda/Eat-Da-Burger#readme",
+  "homepage": "https://github.com/AbramArruda/Eat-Da-Pizza#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
